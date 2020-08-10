@@ -1,0 +1,191 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    perspective: 1000px;
+    perspective-origin: 75% 75%;
+    background: rgb(36, 31, 31);
+}
+.card
+{
+    width: 300px;
+    min-height: 450px;
+    position: relative;
+    float: right;
+    margin: 70px 230px 0 0;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.678);
+    
+}
+.card:hover
+{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+.card > div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.card .front
+{
+    z-index: 2;
+    background-color: rgb(82, 76, 76);
+
+}
+.card .front header
+{
+    width: 90%;
+    height: 20%;
+    background-color: rgb(15, 161, 137);
+    margin: 15px auto;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.644);
+}
+.card .front header img
+{
+    position: absolute;
+    top: 30px;
+    left: 34%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.card .front header code
+{
+    display:block;
+    color: white;
+    font-size: 15px;
+    padding:5px;
+    margin: 5px;
+}
+.card .front h1
+{
+    color: white;
+    width: 90%;
+    margin: 54px auto 0;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+}
+.card .front p
+{
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    color: white;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    /* background: rgb(66, 62, 62); */
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card .front p span
+{
+    font-style: italic;
+}
+.card .front > span
+{
+    display: block;
+    width: 90%;
+    margin:10px auto;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(15, 161, 137);
+    text-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.card .back
+{
+    z-index: 1;
+    background-color: rgb(82, 76, 76);
+    transform: translateZ(-1px) rotateY(180deg);
+}
+.card .back h1
+{
+    color: rgb(15, 161, 137);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding:5px;
+    margin: 10px;
+    background: rgb(66, 62, 62);
+    border-radius: 10px;
+}
+.card .back ul
+{
+    list-style-type: none;
+    display: block;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 5px;
+    background: rgb(66, 62, 62);
+    border-radius: 10px;
+}
+.card .back ul li
+{
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.card .back ul li:hover
+{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.card .back ul li span
+{
+    float: left;
+}
+.card .back ul li progress
+{
+    float: right;
+}
+.card .back details
+{
+    background: rgb(66, 62, 62);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+/* aside decoration */
+aside
+{
+    float: left;
+    font-size: 70px;
+    margin:100px 0 0 120px;
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.479);
+}
+aside h1 .span1
+{
+    font-size: 120px;
+    color: rgb(21, 224, 21); 
+}
+aside h1 .span2
+{
+    font-size: 100px;
+    color: rgb(15, 161, 137);
+}
